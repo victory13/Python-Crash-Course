@@ -42,3 +42,24 @@ cubes = [number**3 for number in range(1,11)]
 
 for cube in cubes:
     print(cube)
+  
+#4-10: Slices
+players = ['charles', 'martina', 'michael', 'florence', 'eli','nina','roby']
+print("First three items are ",players[:3])
+print("Middle three items are",players(1:4))
+print("Last three items are" ,players[-3:])
+
+#4-11: Pizza
+favorite_pizzas = ['pepperoni', 'hawaiian', 'veggie']
+friend_pizzas = favorite_pizzas[:]
+
+favorite_pizzas.append("meat lover's")
+friend_pizzas.append('pesto')
+
+print("My favorite pizzas are:")
+for pizza in favorite_pizzas:
+    print("- " + pizza)
+
+print("\nMy friend's favorite pizzas are:")
+for pizza in friend_pizzas:
+    print("- " + pizza)
