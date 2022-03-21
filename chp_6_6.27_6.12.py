@@ -76,3 +76,50 @@ for p in pets:
   print(f"\n Here's what I know about {p['name'].title()} :")
   for key,value in p.items():
     print(f" {key} : {str(value)}")
+
+
+#6-9. Favorite Places: Make a dictionary called favorite_places. Think of three names to use as keys in the dictionary, and store one to three favorite places
+#for each person.
+favorite_places = {
+	"nini":["mumbai","goa","pondi"],
+	"niki":["japan","tokyo"],
+	"taylor":["new_york","nashville"]
+}
+
+
+
+for name,place in favorite_places.items():
+	print(f"\n{name.title()}'s favourite place are as follows :")
+	for p in place:
+		print("- " + p.title())	
+		
+#6-11. Cities: Make a dictionary called cities. Use the names of three cities as keys in your dictionary. Create a dictionary of information about each city and
+# include the country that the city is in, its approximate population, and one fact about that city. The keys for each city’s dictionary should be something like
+# country, population, and fact. Print the name of each city and all of the information you have stored about it.
+
+cities = {
+    'mumbai': {
+        'country': 'india',
+        'population': 450035678,
+        'nearby mountains': 'sahyadri range',
+        },
+    'talkeetna': {
+        'country': 'alaska',
+        'population': 876,
+        'nearby mountains': 'alaska range',
+        },
+    'kathmandu': {
+        'country': 'nepal',
+        'population': 1003285,
+        'nearby mountains': 'himalaya',
+        }
+    }
+
+for city,city_info in cities.items():
+	country = city_info['country'].title()
+	population = city_info['population']
+	mountains = city_info['nearby mountains'].title()
+
+	print(f"\n {city.title()} is in {country}. ")
+	print("  It has a population of about " + str(population) + ".")
+	print("  The " + mountains + " mountains are nearby.")
