@@ -55,3 +55,56 @@ while True:
         print("  Your ticket is $10.")
     else:
         print("  Your ticket is $15.")
+        
+# 7.8 Deli
+#As each sandwich is made, move it to the list of finished sandwiches. After all the sandwiches have been made, print a message listing each sandwich that was made
+sandwich_orders =['tuna sandwich', 'cheese toast sandwich','egg sandwich']
+order_completed = []
+
+while sandwich_orders:
+    r = sandwich_orders.pop()
+    order_completed.append(r)
+    print(f" I made your {r}")
+print("\n")
+for item in  order_completed:
+    print(f"{item} is completed")
+    
+ #7.9 No Pastrami:
+sandwich_orders =['tuna sandwich','pastrami', 'cheese toast sandwich','egg sandwich','pastrami']
+order_completed = []
+
+print("Sorry we ran out of pastrami")
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
+
+#7-10. Dream Vacation: Write a program that polls users about their dream vacation.
+#Write a prompt similar to If you could visit one place in the world, where would you go?   
+name_prompt = "\nWhat's your name? "
+place_prompt = "If you could visit one place in the world, where would it be? "
+continue_prompt = "\nWould you like to let someone else respond? (yes/no) "
+
+# Responses will be stored in the form {name: place}.
+responses = {}
+
+while True:
+    name = input(name_prompt)
+    place = input(place_prompt)
+
+    responses[name] = place
+    # Ask if there's anyone else responding.
+    repeat = input(continue_prompt)
+    if repeat != 'yes':
+        break
+
+# Show results of the survey.
+print("\n--- Results ---")
+for name, place in responses.items():
+    print(name.titl
+    
+while sandwich_orders:
+    r = sandwich_orders.pop()
+    order_completed.append(r)
+    print(f" I made your {r}")
+print("\n")
+for item in  order_completed:
+    print(f"{item} is completed")
